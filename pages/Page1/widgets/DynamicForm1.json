@@ -1,0 +1,24 @@
+{
+  "bottomRow": 60,
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "gitSyncId": "widget_dynamic_form_sync_12345",
+  "leftColumn": 2,
+  "onSubmit": "{{FormLogic.onSubmit()}}",
+  "rightColumn": 40,
+  "sourceData": "{{ { \"nombre\": \"Usuario Prueba\", \"email\": \"prueba@empresa.com\", \"departamento\": [\"IT\", \"Ventas\", \"Marketing\", \"RRHH\"], \"es_admin\": false, \"comentarios\": \"\" } }}",
+  "submitButtonText": "Enviar",
+  "title": "Formulario Din�mico",
+  "topRow": 2,
+  "type": "JSON_FORM_WIDGET",
+  "widgetId": "qwe_dynamic_form_id_1",
+  "widgetName": "DynamicForm1"
+}
