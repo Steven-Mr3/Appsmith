@@ -1,32 +1,62 @@
 {
-  "gitSyncId": "6a0ce505533612a6395c26fc_ad4f7427-5bfb-4090-8b0a-c8d863fbce56",
-  "unpublishedPage": {
-    "layouts": [
-      {
-        "dsl": {
-          "backgroundColor": "none",
-          "bottomRow": 5000,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
-          "leftColumn": 0,
-          "minHeight": 1292,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
-          "rightColumn": 4896,
-          "snapColumns": 64,
-          "snapRows": 124,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 94,
-          "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
-      }
-    ],
-    "name": "Page1",
-    "slug": "page1"
-  }
+    "gitSyncId":  "6a0ce505533612a6395c26fc_ad4f7427-5bfb-4090-8b0a-c8d863fbce56",
+    "unpublishedPage":  {
+                            "layouts":  [
+                                            {
+                                                "dsl":  {
+                                                            "backgroundColor":  "none",
+                                                            "bottomRow":  5000,
+                                                            "canExtend":  true,
+                                                            "containerStyle":  "none",
+                                                            "detachFromLayout":  true,
+                                                            "dynamicBindingPathList":  [
+
+                                                                                       ],
+                                                            "dynamicTriggerPathList":  [
+
+                                                                                       ],
+                                                            "leftColumn":  0,
+                                                            "minHeight":  1292,
+                                                            "parentColumnSpace":  1,
+                                                            "parentRowSpace":  1,
+                                                            "rightColumn":  4896,
+                                                            "snapColumns":  64,
+                                                            "snapRows":  124,
+                                                            "topRow":  0,
+                                                            "type":  "CANVAS_WIDGET",
+                                                            "version":  94,
+                                                            "widgetId":  "0",
+                                                            "widgetName":  "MainContainer",
+                                                            "children":  [
+                                                                             {
+                                                                                 "sourceData":  "{{FormLogic.getSchema()}}",
+                                                                                 "widgetId":  "qwe_dynamic_form_id_1",
+                                                                                 "title":  "Formulario Dinámico",
+                                                                                 "submitButtonText":  "Enviar",
+                                                                                 "bottomRow":  60,
+                                                                                 "dynamicTriggerPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "onSubmit"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "widgetName":  "DynamicForm1",
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "sourceData"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "topRow":  2,
+                                                                                 "type":  "JSON_FORM_WIDGET",
+                                                                                 "gitSyncId":  "widget_dynamic_form_sync_12345",
+                                                                                 "rightColumn":  40,
+                                                                                 "onSubmit":  "{{FormLogic.onSubmit()}}",
+                                                                                 "leftColumn":  2
+                                                                             }
+                                                                         ]
+                                                        }
+                                            }
+                                        ],
+                            "name":  "Page1",
+                            "slug":  "page1"
+                        }
 }

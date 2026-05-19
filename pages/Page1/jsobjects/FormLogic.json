@@ -1,0 +1,31 @@
+{
+    "pluginId":  "js-plugin",
+    "name":  "FormLogic",
+    "actions":  [
+                    {
+                        "gitSyncId":  "action_getSchema_sync_12345",
+                        "dynamicBindingPathList":  [
+                                                       {
+                                                           "key":  "body"
+                                                       }
+                                                   ],
+                        "executeOnLoad":  true,
+                        "name":  "getSchema",
+                        "fullyQualifiedName":  "FormLogic.getSchema"
+                    },
+                    {
+                        "gitSyncId":  "action_onSubmit_sync_12345",
+                        "dynamicBindingPathList":  [
+                                                       {
+                                                           "key":  "body"
+                                                       }
+                                                   ],
+                        "executeOnLoad":  false,
+                        "name":  "onSubmit",
+                        "fullyQualifiedName":  "FormLogic.onSubmit"
+                    }
+                ],
+    "gitSyncId":  "jsobject_formlogic_sync_12345",
+    "pageId":  "Page1",
+    "pluginType":  "JS"
+}
