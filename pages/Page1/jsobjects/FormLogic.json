@@ -1,31 +1,37 @@
 {
-    "pluginId":  "js-plugin",
-    "name":  "FormLogic",
-    "actions":  [
-                    {
-                        "gitSyncId":  "action_getSchema_sync_12345",
-                        "dynamicBindingPathList":  [
-                                                       {
-                                                           "key":  "body"
-                                                       }
-                                                   ],
-                        "executeOnLoad":  true,
-                        "name":  "getSchema",
-                        "fullyQualifiedName":  "FormLogic.getSchema"
-                    },
-                    {
-                        "gitSyncId":  "action_onSubmit_sync_12345",
-                        "dynamicBindingPathList":  [
-                                                       {
-                                                           "key":  "body"
-                                                       }
-                                                   ],
-                        "executeOnLoad":  false,
-                        "name":  "onSubmit",
-                        "fullyQualifiedName":  "FormLogic.onSubmit"
-                    }
-                ],
-    "gitSyncId":  "jsobject_formlogic_sync_12345",
-    "pageId":  "Page1",
-    "pluginType":  "JS"
+  "pluginId": "js-plugin",
+  "name": "FormLogic",
+  "actions": [
+    {
+      "gitSyncId": "action_getSchema_sync_12345",
+      "dynamicBindingPathList": [
+        {
+          "key": "body"
+        }
+      ],
+      "executeOnLoad": true,
+      "name": "getSchema",
+      "fullyQualifiedName": "FormLogic.getSchema"
+    },
+    {
+      "gitSyncId": "action_onSubmit_sync_12345",
+      "dynamicBindingPathList": [
+        {
+          "key": "body"
+        }
+      ],
+      "executeOnLoad": false,
+      "name": "onSubmit",
+      "fullyQualifiedName": "FormLogic.onSubmit"
+    }
+  ],
+  "gitSyncId": "jsobject_formlogic_sync_12345",
+  "pageId": "Page1",
+  "pluginType": "JS",
+  "isDefault": true,
+  "deleted": false,
+  "userPermissions": [],
+  "policies": [],
+  "variables": [],
+  "body": "export default {\n    getSchema: () => {\n        return {\n            \"nombre\": \"Usuario Prueba\",\n            \"email\": \"prueba@empresa.com\",\n            \"departamento\": [\"IT\", \"Ventas\", \"Marketing\", \"RRHH\"],\n            \"es_admin\": false,\n            \"comentarios\": \"\"\n        };\n    },\n    onSubmit: () => {\n        const formData = DynamicForm1.formData;\n        showAlert(\"Datos enviados: \" + JSON.stringify(formData), \"success\");\n    }\n}\r\n"
 }
