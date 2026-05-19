@@ -29,18 +29,7 @@
                                                             "widgetName":  "MainContainer",
                                                             "children":  [
                                                                              {
-                                                                                 "sourceData":  {
-                                                                                                    "email":  "prueba@empresa.com",
-                                                                                                    "nombre":  "Usuario Prueba",
-                                                                                                    "es_admin":  false,
-                                                                                                    "comentarios":  "",
-                                                                                                    "departamento":  [
-                                                                                                                         "IT",
-                                                                                                                         "Ventas",
-                                                                                                                         "Marketing",
-                                                                                                                         "RRHH"
-                                                                                                                     ]
-                                                                                                },
+                                                                                 "sourceData":  "{{ { \"nombre\": \"Usuario Prueba\", \"email\": \"prueba@empresa.com\", \"departamento\": [\"IT\", \"Ventas\", \"Marketing\", \"RRHH\"], \"es_admin\": false, \"comentarios\": \"\" } }}",
                                                                                  "widgetId":  "qwe_dynamic_form_id_1",
                                                                                  "title":  "Formulario Din�mico",
                                                                                  "submitButtonText":  "Enviar",
@@ -52,7 +41,9 @@
                                                                                                             ],
                                                                                  "widgetName":  "DynamicForm1",
                                                                                  "dynamicBindingPathList":  [
-
+                                                                                                                {
+                                                                                                                    "key":  "sourceData"
+                                                                                                                }
                                                                                                             ],
                                                                                  "topRow":  2,
                                                                                  "type":  "JSON_FORM_WIDGET",
